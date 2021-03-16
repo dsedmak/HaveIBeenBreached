@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+#
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{2628059A-F86B-4211-9236-33E5716B3AA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{DC57616B-572E-4B88-88C1-AFCF121B1BD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{AB732F72-CD88-42D8-9DB6-49E1CE1E8A03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{1CB6EF41-F6D4-44D8-B555-52C26457AAC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{0C930C8C-9643-444B-8BC1-A14843D34F57}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		version.json = version.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BreachedEmails", "BreachedEmails", "{2DB78BCA-E8C5-42C4-92F2-7E9AF44B5EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreachedEmails", "Modules\BreachedEmails\BreachedEmails\BreachedEmails.csproj", "{DEAECE98-A568-4A6D-9856-B3386347ED70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.BreachedEmails", "Modules\BreachedEmails\Tests.BreachedEmails\Tests.BreachedEmails.csproj", "{204D445C-FA49-405E-A2B3-F96DD76B57CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2DB78BCA-E8C5-42C4-92F2-7E9AF44B5EFF} = {AB732F72-CD88-42D8-9DB6-49E1CE1E8A03}
+		{DEAECE98-A568-4A6D-9856-B3386347ED70} = {2DB78BCA-E8C5-42C4-92F2-7E9AF44B5EFF}
+		{204D445C-FA49-405E-A2B3-F96DD76B57CD} = {2DB78BCA-E8C5-42C4-92F2-7E9AF44B5EFF}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEAECE98-A568-4A6D-9856-B3386347ED70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEAECE98-A568-4A6D-9856-B3386347ED70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEAECE98-A568-4A6D-9856-B3386347ED70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEAECE98-A568-4A6D-9856-B3386347ED70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{204D445C-FA49-405E-A2B3-F96DD76B57CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{204D445C-FA49-405E-A2B3-F96DD76B57CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{204D445C-FA49-405E-A2B3-F96DD76B57CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{204D445C-FA49-405E-A2B3-F96DD76B57CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

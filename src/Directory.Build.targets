@@ -1,0 +1,13 @@
+<Project>
+    <ItemGroup>
+        <PackageReference Include="Nerdbank.GitVersioning" Version="3.3.37" PrivateAssets="All"/>
+        <PackageReference Include="NUnit" Version="3.13.1" Condition="$(MSBuildProjectName.StartsWith('Tests.'))" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0"  Condition="$(MSBuildProjectName.StartsWith('Tests.'))" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1"  Condition="$(MSBuildProjectName.StartsWith('Tests.'))" />
+    </ItemGroup>
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>Tests.$(MSBuildProjectName)</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+</Project>
