@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.4" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\Modules\BreachedEmails\Adapters\BreachedEmails.EfCoreEmailAddressCollectionAdapter\BreachedEmails.EfCoreEmailAddressCollectionAdapter.csproj" />
+      <ProjectReference Include="..\..\Modules\BreachedEmails\Adapters\Tests.BreachedEmails.EfCoreEmailAddressCollectionAdapter\Tests.BreachedEmails.EfCoreEmailAddressCollectionAdapter.csproj" />
+      <ProjectReference Include="..\WebApp\WebApp.csproj" />
+    </ItemGroup>
+</Project>

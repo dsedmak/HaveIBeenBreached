@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <NoWarn>CS1591</NoWarn>
+        <OutputType>library</OutputType>
+        <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Modules\BreachedEmails\Contracts\BreachedEmails.CallerContract\BreachedEmails.CallerContract.csproj" />
+      <ProjectReference Include="..\..\Modules\BreachedEmails\Contracts\BreachedEmails.SharedContract\BreachedEmails.SharedContract.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="version.json" />
+    </ItemGroup>
+
+</Project>
