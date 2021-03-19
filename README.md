@@ -4,14 +4,13 @@ Have I Been Breached is a service that allows you to check if your email address
 
 The service is written as an ASP<span>.</span>NET Core REST api with the following endpoints:
 
-1. GET /breachedemails/:email
+1. GET /breachedemails/{emailAddress}
     - Allows the user to check if their email is in the database of breached emails
     - Responses: 200 OK, 404 NotFound or 400 Bad Request (if it's not an email)
-2. POST /breachedemails
+2. POST /breachedemails?emailAddress={emailAddress}
     - Allows the user to add an email to the database in case of a breach
-    - Accepts: application/json
     - Responses: 201 Created, 409 Conflict or 400 Bad Request
-3. DELETE /breachedemails/:email
+3. DELETE /breachedemails/{emailAddress}
     - Allows the user to remove an email that has been added in error
     - Responses: 200 OK or 400 Bad Request
 
@@ -27,13 +26,18 @@ To run the service yourself follow these steps:
     cd haveibeenbreached/src
     dotnet build
     ```
-4. Run it
+4. Configure it
+   - src/Apps/WebApp/appsettings.json
+5. Create database (SQLite) and run migrations
+   ```
+   cd src/apps/WebApp
+   dotnet tool install --global dotnet-ef
+   dotnet ef database update
+   ```
+6. Run it
     ```
-    cd apps/WebApp
+    cd src/apps/WebApp
     dotnet run
     ```
-5. Publish it
-    ```
-    cd apps/WebApp
-    dotnet publish
-    ```
+7. Use it
+   - https://localhost:5001/index.html opens swagger which is fully functional
