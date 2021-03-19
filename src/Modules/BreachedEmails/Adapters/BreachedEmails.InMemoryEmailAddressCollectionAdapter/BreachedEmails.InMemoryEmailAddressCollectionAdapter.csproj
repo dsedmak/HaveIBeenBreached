@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Contracts\BreachedEmails.ImplementerContract\BreachedEmails.ImplementerContract.csproj" />
+      <ProjectReference Include="..\..\Contracts\BreachedEmails.SharedContract\BreachedEmails.SharedContract.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="KTrie" Version="1.3.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+      <PackageReference Include="Scrutor" Version="3.3.0" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <ProjectReference Include="..\..\Contracts\BreachedEmails.ImplementerContract\BreachedEmails.ImplementerContract.csproj" />
+        <ProjectReference Include="..\..\Contracts\BreachedEmails.SharedContract\BreachedEmails.SharedContract.csproj" />
+        <ProjectReference Include="..\BreachedEmails.InMemoryCacheEmailAddressCollectionAdapter\BreachedEmails.InMemoryCacheEmailAddressCollectionAdapter.csproj" />
+    </ItemGroup>
+</Project>

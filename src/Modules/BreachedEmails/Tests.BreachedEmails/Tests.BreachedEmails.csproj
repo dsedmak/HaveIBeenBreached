@@ -2,6 +2,9 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BreachedEmails\BreachedEmails.csproj" />
+      <ProjectReference Include="..\Contracts\BreachedEmails.CallerContract\BreachedEmails.CallerContract.csproj" />
+      <ProjectReference Include="..\Contracts\BreachedEmails.ImplementerContract\BreachedEmails.ImplementerContract.csproj" />
+      <ProjectReference Include="..\Contracts\BreachedEmails.SharedContract\BreachedEmails.SharedContract.csproj" />
     </ItemGroup>
 
 </Project>

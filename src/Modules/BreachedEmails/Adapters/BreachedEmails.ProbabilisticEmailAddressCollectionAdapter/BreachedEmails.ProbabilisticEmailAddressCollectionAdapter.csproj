@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Contracts\BreachedEmails.ImplementerContract\BreachedEmails.ImplementerContract.csproj" />
+      <ProjectReference Include="..\..\Contracts\BreachedEmails.SharedContract\BreachedEmails.SharedContract.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Bloomy.Lib" Version="1.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+      <PackageReference Include="Scrutor" Version="3.3.0" />
+    </ItemGroup>
+
+</Project>

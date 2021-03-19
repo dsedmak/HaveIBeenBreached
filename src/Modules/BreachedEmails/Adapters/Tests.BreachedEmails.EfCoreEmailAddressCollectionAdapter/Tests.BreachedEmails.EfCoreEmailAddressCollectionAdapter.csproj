@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <ProjectReference Include="..\..\Contracts\BreachedEmails.ImplementerContract\BreachedEmails.ImplementerContract.csproj" />
+        <ProjectReference Include="..\..\Contracts\BreachedEmails.SharedContract\BreachedEmails.SharedContract.csproj" />
+        <ProjectReference Include="..\BreachedEmails.EfCoreEmailAddressCollectionAdapter\BreachedEmails.EfCoreEmailAddressCollectionAdapter.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.4" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    </ItemGroup>
+</Project>
